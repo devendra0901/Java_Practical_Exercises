@@ -11,13 +11,18 @@ public class Pe5 {
         String  lines = inp.nextLine();    
 
         String[] s = lines.trim().split(" ");
-
+	try{
             for (int i = 0; i < s.length; i++) {
             sum += Integer.parseInt(s[i]);
             }
-        
+System.out.println(sum);
+}
+catch(NumberFormatException e){
+	System.err.println("Error : you dint enter integer values");
+
+        }
             
-        System.out.println(sum);
+        
         
     }
 }
